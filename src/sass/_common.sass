@@ -1,0 +1,78 @@
++font(blackfont,'mark_simonson_-_proxima_nova_black-webfont')
++font(light,'mark_simonson_-_proxima_nova_light-webfont')
++font(regular,'mark_simonson_-_proxima_nova_regular-webfont')
++font(bold,'mark_simonson_-_proxima_nova_bold-webfont')
++font(semibold,'mark_simonson_-_proxima_nova_semibold-webfont')
++font(hand,'mawns_handwriting-webfont')
+
+=hand
+	font-family: 'hand',sans-serif 
+=black
+	font-family: 'blackfont',sans-serif 
+=bold
+	font-family: 'bold',sans-serif
+=light
+	font-family: 'light',sans-serif
+=semi
+	font-family: 'semibold',sans-serif
+=reg
+	font-family: 'regular',sans-serif
+	
+body
+	+reg
+	font-size: #111626 
+.arrow
+	height: 1px
+	position: relative
+	background: rgba(#fff,.2)  
+	width: 63px 
+	&:after
+		position: absolute
+		content: ""  
+		top: -10px 
+		right: 0
+		bottom: -10px  
+		left: 0
+		cursor: pointer 
+	&:before
+		position: absolute
+		content: "" 
+		right: 0
+		bottom: 0
+		transform-origin: 100% 100%
+		transform: rotate(-45deg)  
+		height: 15px  
+		width: 15px 
+		border-right: 1px solid rgba(#FFF,.2) 
+		border-bottom: 1px solid rgba(#FFF,.2) 
+
+	&_alt
+		background: rgba(#000,.2)  
+		&:before
+			border-right: 1px solid rgba(#000,.2) 
+			border-bottom: 1px solid rgba(#000,.2) 
+		
+.button
+	height: 42px
+	line-height: 42px
+	padding: 0 24px
+	display: inline-block
+	background: #b1ce01
+	text-transform: uppercase
+	text-decoration: none
+	+bold
+	font-size: 12px
+	color: #122f4c 
+.h2
+	font-size: 60px 
+	+light
+	line-height: 1 
+	color: #111626 
+	letter-spacing: 1px 
+	text-transform: uppercase
+	margin-bottom: 37px 
+.container
+	max-width: 1170px 
+	margin: 0 auto 
+	+r(1230)
+		margin: 0 30px 

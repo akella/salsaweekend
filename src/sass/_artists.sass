@@ -1,0 +1,61 @@
+.artists
+	background: #f6f6f6
+	margin: 230px 0 100px 0
+	
+	.container
+		padding: 47px 0 110px 0   
+		position: relative
+		.h2
+			position: absolute
+			right: 0
+			top: -1.6em
+			text-align: right  
+.artists-slider
+	position: relative
+	.slick-hidden
+		display: none
+	&__next,&__prev
+		position: absolute
+		right: 10px
+		bottom: -30px  
+	&__prev
+		right: 80px 
+		transform: rotate(-180deg)
+.artist
+	&__photo
+		margin-bottom: 20px 
+		margin-right: 40px 
+		img
+			width: 100%
+			display: block 
+	&__country
+		font-size: 14px 
+		color: #1b2237 
+		padding-right: 10px 
+	&__title
+		+black
+		font-size: 20px 
+		color: #1b2237 
+		text-transform: uppercase
+		padding-right: 10px 
+.tabs
+	border-bottom: 1px solid rgba(#000,.2) 
+	+light
+	text-align: center
+	margin-bottom: 30px 
+	&_right
+		text-align: right
+		a:last-child
+			padding-right: 0 
+	a
+		display: inline-block
+		color: #111626 
+		text-decoration: none
+		font-size: 18px 
+		text-transform: uppercase
+		
+		padding: 0 20px 
+		padding-bottom: 20px 
+		&.is-active
+			+bold
+		

@@ -1,0 +1,129 @@
+.venue-section
+	margin-bottom: 160px 
+	margin-top: 100px 
+	.h2
+		margin-bottom: 30px 
+	&__title
+		background: #b1ce01
+		text-transform: uppercase
+		+bold
+		color: #fff
+		height: 30px   
+		line-height: 30px
+		padding-left: 29px + 20px 
+.venue
+ 	
+ 	&__row
+ 		display: flex
+ 		margin-bottom: 40px 
+ 		margin-left: 27px
+ 	&__info
+ 		background: #f3f3f3
+ 		
+ 		border-left: 1px solid #DDDDDF   
+ 		font-size: 13px 
+ 		line-height: 1.4
+ 		padding: 20px 
+ 		width: 50% 
+ 	&__title
+ 		font-size: 30px 
+ 		+bold
+ 		color: #181f32 
+ 		margin-bottom: 6px 
+ 		line-height: 1 
+ 	&__logo
+ 		padding: 20px 
+ 		width: 20% 
+ 		img
+ 			display: block
+ 			max-width: 100% 
+ 	&__buy
+ 		margin-left: auto 
+ 		margin-top: auto
+.photo-slider
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%     
+	&__prev,&__next
+		position: absolute
+		bottom: 30px 
+		left: 20px 
+		cursor: pointer
+		z-index: 100 
+	&__prev
+		transform: rotate(-180deg)
+	&__next
+		left: auto
+		right: 20px 
+		
+	&__slide 
+		position: absolute
+		height: 100%
+		width: 100%  
+		background-size: cover 
+	.slick-list,.slick-track,.slick-slider
+		height: 100%
+.room
+	margin-left: 27px 
+	position: relative
+	margin-bottom: 26px 
+	border-left: 1px solid #dddddf  
+	&__icon
+		position: absolute
+		left: -27px 
+		top: 5px 
+	&__title
+		+semi
+		font-size: 20px 
+		text-transform: uppercase
+		color: #b1ce01 
+		padding-left: 20px 
+		padding-bottom: 6px 
+		
+	&__cols
+		background: #f3f3f3
+		
+		width: 100% 
+		display: flex
+	&__info
+		padding: 20px 
+		width: 50% 
+		font-size: 14px 
+		color: #111626 
+		line-height: 1.4 
+		p,ul
+			margin-bottom: 1em
+		ul
+			list-style-type: disc
+			margin-left: 1.7em 
+	&__price
+		width: 20%
+		padding: 21px 30px
+		border-left: 1px solid #DDDDDF  
+		h4
+			+semi
+			font-size: 13px 
+			color: #c0c0c0 
+			margin-bottom: 15px 
+			text-transform: uppercase
+		dl
+			margin-bottom: 1em
+			dt
+				+light
+				font-size: 18px 
+				text-transform: uppercase
+				letter-spacing: 2px 
+				color: #181f32 
+			dd
+				font-size: 14px 
+				+bold
+				color: #181f32 
+	&__photo
+		width: 30% 
+		position: relative
+		border-left: 1px solid #DDDDDF  
+			 

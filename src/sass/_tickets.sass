@@ -1,0 +1,87 @@
+.tickets
+	margin-bottom: 107px 
+.t
+	width: 100%
+	border-color: collapse 
+	thead
+		th
+			font-weight: normal
+			font-size: 12px 
+			color: #181f32 
+			text-align: center
+			padding: 5px 
+			strong
+				+bold
+			&.is-active
+				border-left: 2px solid #181E33 
+				border-top: 2px solid #181E33
+				border-right: 2px solid #181E33
+			&.is-past
+				color: #cecfd1 
+				
+	tfoot
+		padding: 5px 
+			min-height: 20px 
+		td
+			&.is-active
+				border-left: 2px solid #181E33 
+				border-bottom: 2px solid #181E33
+				border-right: 2px solid #181E33
+				div
+					position: relative
+					z-index: -1 
+					&:before
+						position: absolute
+						width: 217px 
+						height: 82px 
+						background: url(../img/bottom.png) no-repeat 0 0
+						top: 0
+						left: -10px
+						content: ' '
+	tbody
+		tr:nth-child(1)
+			th
+				background: #f2f2f2 url(../img/k.png) no-repeat 0 0
+		td,th
+			background: #f2f2f2
+			padding: 28px 18px  
+			border-bottom: 1px solid #DDDDDF 
+		th
+			text-align: left
+			font-weight: normal
+			padding-left: 27px 
+			width: 350px 
+			strong
+				font-size: 30px 
+				font-weight: normal
+				text-transform: uppercase
+				color: #181e33 
+				
+				+black
+				span
+					+light
+			small
+				display: block
+				font-size: 14px 
+				color: #181e33 
+		td
+			color: #181e33 
+			text-align: center
+			span
+				font-size: 24px 
+				+light
+				text-transform: uppercase 
+			small
+				font-size: 14px 
+			&.is-disabled
+				color: #b2b3b6
+				span
+					text-decoration: line-through
+			&.is-future
+				color: #b2b3b6
+			&.is-active
+				border-left: 2px solid #181E33 
+				border-right: 2px solid #181E33 
+		tr:last-child
+			td,th
+				border-bottom: none 

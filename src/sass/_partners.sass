@@ -1,0 +1,44 @@
+.partners
+	position: relative
+	.container
+		position: relative
+	.button
+		position: absolute
+		right: 0
+	.h2
+		margin-bottom: 45px 
+.partners-slider
+	position: relative
+	border-bottom: 1px solid #D1D2D6 
+	padding-bottom: 30px 
+	&__next,&__prev
+		position: absolute
+		bottom: -50px 
+		right: 0 
+		z-index: 10 
+	&__prev
+		right: 74px 
+		transform: rotate(-180deg)
+
+.p
+	&__title,&__descr
+		display: none
+.currentp
+	position: relative
+	top: -.5em 
+	&__title
+		+bold
+		font-size: 14px 
+		text-transform: uppercase
+		color: #111626
+		margin-bottom: 14px  
+		display: inline-block
+		background: #fff 
+		padding-right: 40px 
+		padding-top: 10px 
+		min-width: 240px 
+	&__descr
+		font-size: 14px 
+		color: #111626 
+		line-height: 1.4 
+		max-width: 60% 
